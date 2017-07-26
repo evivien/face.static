@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>face-herault</title>
+
+  <!-- link bootstrap  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- link css  -->
+  <link rel="stylesheet" href="css/master.css">
+
+</head>
+
+<body>
+
+  <section class="nav">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          <a class="navbar-brand" href="index.html"><img src="images/logoFace/logoface-herault2.png" alt="logoface-herault2.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="club.html">Le club</a></li>
+            <li class="active"><a href="champ-action.html">Champ-d'action</a></li>
+            <li><a href="partenaires.html">Partenaires</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </section>
+
+  <!-- <section class="jumbotron" style="background-image: url('images/DAS/imgDAS2.jpg');">
+    <div class="inside">
+      <h1>Champ d'action</h1>
+    </div>
+    </div>
+  </section> -->
+
+  <div class="container container-champ">
+    <section class="les-champs-daction">
+
+      <hr>
+
+      <h2>Les Champ d'Action</h2>
+
+      <div class="separate">
+        <div class="ligne">
+        </div>
+      </div>
+
+      <!-- ~~~~~~~~~~~~ image 1 ~~~~~~~~~~~~~ -->
+
+      <!-- <div class="case">
+        <button class="full spoiler-trigger" data-toggle="collapse">
+        <div class="pictures" style="background-image: url('images/DAS/imgDAS1.jpg'); background-color: #C73558">
+          <div class="title">
+            <h3>Nos actions pour l'entreprise</h3>
+            <img src="images/DAS/das-icons-01.svg" alt="images/DAS/das-icons-01.svg">
+                </div>
+            <div class="text" style="display: none">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </button>
+      </div> -->
+
+      <div class="case" style="background-image: url('images/DAS/imgDAS1.jpg'); background-color: #C73558">
+        <button type="button" class="full spoiler-trigger" data-toggle="collapse">
+          <div class="pictures" >
+            <div class="title">
+              <h3>Nos actions pour l'entreprise</h3>
+              <img src="images/DAS/das-icons-01.svg" alt="images/DAS/das-icons-01.svg">
+        </button>
+      </div>
+      <div class="panel-collapse collapse out">
+        <div class="panel-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos, accusamus. Quidem, molestiae. Ipsam consequatur impedit voluptatem, quod qui perferendis fugiat. Eos adipisci dolorem doloremque quos debitis excepturi ex itaque!</p>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <script type="text/javascript">
+    $(".spoiler-trigger").click(function() {
+      $(this).parent().next().collapse('toggle');
+    });
+  </script>
+
+
+</body>
+
+</html>

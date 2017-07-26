@@ -1,0 +1,664 @@
+/*~~~~~~~~~~~~~~~~~~~~~~ fonts ~~~~~~~~~~~~~~~~~~~*/
+
+@font-face {
+  font-family: "din";
+  src: url("../fonts/DINR____.TTF");
+}
+
+@font-face {
+  font-family: "ralleway-blod";
+  src: url("../fonts/Raleway-Bold.ttf");
+}
+
+@font-face {
+  font-family: "ralleway-reg";
+  src: url("../fonts/Raleway-Regular.ttf");
+}
+
+/*-------------*/
+
+body {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "din";
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~ général ~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.info-provi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #55566A;
+  color: #fff;
+  font-size: 27px;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  text-align: center;
+}
+
+.unique {
+  font-family: "ralleway-reg";
+}
+
+.unique2 {
+  font-weight: bold;
+}
+
+.lien {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.ligne {
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-bottom: 50px;
+  border-color: rgba(34, 114, 118, 0.8);
+}
+
+h1, .jumbotron h2, .le-club button {
+  font-family: "ralleway-blod";
+}
+
+h2 {
+  color: rgba(10, 60, 62, 0.8);
+  margin-top: 50px;
+}
+
+.pictures .title h3 {
+  font-family: "ralleway-reg";
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.les-champs-daction .speech h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container-champ .pictures .text h2 {
+  font-family: "ralleway-reg";
+}
+
+.container-champ .pictures .title h3 {
+  font-family: "ralleway-blod";
+  font-size: 25px;
+}
+
+.container-champ .pictures .title h3:first-child {
+  text-shadow: 1px 1px 10px black;
+}
+
+p {
+  line-height: 1.675;
+  font-size: 18px;
+  color: #2B8A8E;
+    font-family: "din";
+}
+
+.speech p, .case p {
+  color: inherit;
+}
+
+span a {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  padding: 50px 0px;
+  color: rgba(10, 60, 62, 0.8);
+  line-height: 1.675;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~ navbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.navbar-brand img {
+  height: 100%;
+  width: 150px;
+}
+
+.navbar-brand {
+  padding: 5px 0 5px 0;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: rgba(10, 60, 62, 0.8);
+}
+
+
+
+.navbar-nav>.active>a {
+  font-weight: bold;
+}
+
+.container-fluid {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.collapse {
+  width: 70%;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.navbar-default {
+  margin-bottom: 0px;
+  border-color: #ccc;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ jumbotron ~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.jumbotron {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-attachment: fixed;
+  margin-bottom: 0;
+  /*box-shadow: 0px 2px 5px;*/
+}
+
+.jumbotron img {
+  max-width: 100%;
+}
+
+.inside {
+  width: 70%;
+  padding-top: 13%;
+  padding-bottom: 13%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: auto;
+  color: #fff;
+  font-family: 'Impact', Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  font-weight: 400;
+}
+
+
+/*~~~~~~~~~~~~~~~ le-club ~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~ les-champs-daction ~~~~~~~~~~~~~~~*/
+
+.les-champs-daction .case {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /*border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;*/
+}
+
+.les-champs-daction .case .description, .les-champs-daction .case .pictures {
+  width: 50%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.les-champs-daction .case .description .speech {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.pictures .title {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'raleway-bold';
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.les-champs-daction .case .pictures {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-champ .les-champs-daction .case .pictures {
+  background-blend-mode: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-champ .les-champs-daction .case .pictures {
+  background-size: 100%;
+}
+
+.container-champ .les-champs-daction .case .pictures {
+  width: 100%;
+  height: 100%;
+  padding: 5% 0 5% 0;;
+}
+
+.container-champ .les-champs-daction .case {
+flex-direction: column;
+}
+
+.container-champ button {
+  border:none;
+}
+
+.container-champ .les-champs-daction .case .pictures img {
+  width: 150px;
+  height: 100px;
+}
+
+.container-champ .les-champs-daction .case a {
+  width: 100%;
+}
+
+
+.panel {
+box-shadow: none !important;
+}
+
+.container-champ .les-champs-daction .case button {
+  width: 100%;
+}
+
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.container-champ .les-champs-daction .case .full:hover {
+  font-style: none;
+}
+
+#text1, #text2, #text3, #text4, #text5 {
+  transition: height 0.5s ease;
+  padding-top: 5%;
+}
+
+.pictures .text {
+  text-transform: none;
+  width: 85%;
+  font-size: 15px;
+margin: auto;
+}
+
+.pictures .text h2 {
+  color: #fff;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ le club ~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.cadre2{
+	padding-top: 5%;
+	width: 100%;
+	height: 450px;
+	color:#2B8A8E;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	padding-right: 1%;
+}
+
+.cadre2-texte{
+	width: 80%;
+	height: 70%;
+	border-bottom: 1.5px solid;
+	color:#2B8A8E;
+	margin-top: 20%;
+	margin-top: 50px;
+	color:#2B8A8E;
+}
+
+.cadre2-texte h1{
+	font-size: 52px;
+}
+
+.cadre2-texte p{
+	font-size: 24px;
+}
+
+.cadre2 h6{
+	font-size: 16px;
+	position: absolute;
+	margin-bottom: 0px;
+	bottom: -4%;
+	text-align: right;
+	margin-left: 80%;
+	background-color: #F1F2F2;
+	z-index: 9;
+	color: #2586A4;
+}
+
+
+.link {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.link img {
+  width: 90%;
+}
+
+#link-gouvernance img {
+  width: 200px;
+  height: 200px;
+}
+
+.info .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.info .row .column {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 100%;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  font-family: 'Maneo';
+  font-size: 50px;
+  transition: all 0.5s ease;
+}
+
+.info .row .column button {
+  color: #fff;
+  text-transform: uppercase;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.0);
+  border: none;
+  display: inline-table;
+      text-shadow: 1px 1px 50px rgba(0,0,0,1), 1px 1px rgba(0,0,0,0.7);
+  text-align: center;
+  font-size: 20px;
+}
+
+#link-entreprise, #link-financeurs, #link-gouvernance, #link-equipe {
+  opacity: 0;
+  transition: opacity 1s ease;
+  display: block;
+  position: absolute;
+  width: 1200px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~ Contacts ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-row .case .pictures {
+
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.pictures-ligne {
+height: 200px;
+border-right: 1px solid rgba(10, 60, 62, 0.4);
+
+}
+
+.contact-row h2 , .contact-row p , .contact-row hr {
+  color: rgba(10, 60, 62, 0.8);
+}
+
+ .contact-row hr {
+   border-bottom: 1px solid;
+   color: rgba(10, 60, 62, 0.4);
+   width: 50%;
+ }
+
+.action {
+  text-align: center;
+}
+
+.action h2 {
+  font-size: 25px;
+}
+
+.contact-champ {
+  background-color: rgba(10, 60, 62, 0.4);
+  background-blend-mode: darken;
+  margin-top: 100px;
+padding-bottom: 50px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ footer ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+footer {
+  background-color: #227276;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.posrow p {
+  color: #fff;
+}
+
+.flexfooter  {
+  width: 100%;
+}
+
+.resoc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resoc a {
+    color: #fff;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ responsive ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media screen and (max-width: 992px) {
+
+
+.contact-row {
+  flex-direction: column;
+}
+
+.pictures-ligne {
+height: 80px;
+border: none;
+}
+  .les-champs-daction .case {
+  flex-direction: column;
+  }
+  p {
+    font-size: inherit;
+  }
+  .les-champs-daction .case:nth-child(odd) {
+  flex-direction: column-reverse;
+  }
+  .les-champs-daction .case .description, .les-champs-daction .case .pictures{
+    width: 100%;
+  }
+  .jumbotron {
+    background-size: contain;
+  }
+  .info .row {
+    flex-wrap: wrap;
+  }
+  #link-entreprise, #link-financeurs, #link-gouvernance, #link-equipe {
+    width: 100%;
+    position: relative!important;
+  }
+
+  .cadre2 h6 {
+    position: inherit;
+  }
+
+  .cadre2-texte {
+    border: none;
+  }
+
+  .cadre2 {
+    height: inherit;
+  }
+
+  .info .gouv p {
+    font-size: 13px!important;
+
+  }
+
+  .info .row {
+    justify-content: center;
+  }
+
+  .info .gouv  {
+      justify-content: flex-start;
+
+    }
+
+  #link-entreprise , #link-financeurs, #link-gouvernance, #link-equipe {
+    position: absolute;
+  }
+
+  #link-entreprise .container,
+  #link-financeurs .container,
+  #link-gouvernance .container,
+  #link-equipe .container {
+    padding: 0;
+    margin: 0;
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+
+.flexfooter {
+  width: 90%;
+  padding-left: 10%;
+}
+}
+
+@media screen and (max-width: 480px) {
+p {
+  font-size: inherit;
+}
+.jumbotron {
+  background-size: cover;
+}
+
+span a {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: inherit;
+}
+
+footer {
+  text-align: center;
+}
+
+.resoc {
+      justify-content: space-around;
+      margin-top: 20px;
+}
+
+.posrow img {
+  margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 740px) {
+
+.navbar .container-fluid {
+  display: block;
+}
+.nav .navbar-nav{
+  display: block;
+  font-size: inherit;
+}
+}
+
+.link-inside .container {
+  margin: 0;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1,
+.col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9  {
+  padding: 0;
+}

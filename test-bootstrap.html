@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <div class="container">
+      <div class="qvqv">
+        <div class="vqvq">
+          <button type="button" class="spoiler-trigger">Toggle Button</button>
+        </div>
+        <div class="panel-collapse collapse out">
+          <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quos, accusamus. Quidem, molestiae. Ipsam consequatur impedit voluptatem, quod qui perferendis fugiat. Eos adipisci dolorem doloremque quos debitis excepturi ex itaque!</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <button type="button" class="btn btn-default btn-xs spoiler-trigger" data-toggle="collapse">Toggle Button</button>
+        </div>
+        <div class="panel-collapse collapse out">
+          <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ullam cupiditate repellat dolorem maxime suscipit labore officiis, commodi aliquam fugit in inventore, eum velit. Ex officia placeat veritatis repellat hic.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <button type="button" class="btn btn-default btn-xs spoiler-trigger" data-toggle="collapse">Toggle Button</button>
+        </div>
+        <div class="panel-collapse collapse out">
+          <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias rerum harum et, earum placeat tempore maiores. Beatae repudiandae aspernatur quae explicabo minus quos tempora illum sed consequuntur? Cumque, est impedit?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+$(".spoiler-trigger").click(function() {
+  $(this).parent().next().collapse('toggle');
+});
+</script>

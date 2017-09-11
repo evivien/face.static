@@ -28,6 +28,18 @@ body {
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~ général ~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+.Antenne .title {
+  font-family: "din";
+}
+
+.Antenne .title h2 {
+  font-family: "din";
+}
+
+.container-controle .row {
+  margin-left: 0;
+}
+
 .info-provi {
   display: flex;
   justify-content: center;
@@ -494,8 +506,7 @@ border-right: 1px solid rgba(10, 60, 62, 0.4);
 }
 
 .contact-champ {
-  background-color: rgba(10, 60, 62, 0.4);
-  background-blend-mode: darken;
+
   margin-top: 100px;
 padding-bottom: 50px;
 }

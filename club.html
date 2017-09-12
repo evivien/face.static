@@ -3,16 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <title>face-herault - Site En Maintenance</title>
+  <title>face-herault</title>
 
   <!-- link bootstrap  -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="images/logoFace/logoface-herault2.png">
   <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- link css  -->
+    <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/master.css">
 
 </head>
@@ -32,7 +34,7 @@
           <a class="navbar-brand" href="index.html"><img src="images/logoFace/logoface-herault2.png" alt="logoface-herault2.png"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav animated fadeIn">
             <li><a href="index.html">Accueil</a></li>
             <li class="active"><a href="club.html">Le Club</a></li>
             <li><a href="champs-action.html">Champs d'actions</a></li>
@@ -45,12 +47,13 @@
   </section>
 
   <section class="jumbotron" style="background-image: url('images/DAS/imgDAS3.jpg');">
-    <div class="inside">
+    <div class="inside animated fadeInLeft">
       <h1>Le Club</h1>
     </div>
     </div>
   </section>
 
+  <div class="trigger" class="spacer s0"></div>
   <div class="container">
 
     <hr>
@@ -68,12 +71,15 @@
         <b>Le Club d'Entreprises FACE Hérault </b></p>
       <p>
         <br> En 15 ans, le club d'entreprises FACE Hérault a su rassembler plus de 1850 entreprises pour lutter contre les discriminations, faciliter l’emploi et l’égalité des chances :
-
-        <br> <b>87 803</b> Bénéficiaires accueillis, accompagnés dans nos actions de médiation sociale
-        <br> <b>183</b> Classes de collège et lycée ont participé à nos programmes de découverte de l’entreprise et d’égalité des chances (accès aux stages …)
-        <br> <b>+ de 6000</b> Demandeurs d’emplois accompagnés
-        <br> <b>5900</b> Collaborateurs d’entreprise impliqués dans nos actions
+  </p><div class="animate"><p>
+        <br> <strong>87 803</strong> Bénéficiaires accueillis, accompagnés dans nos actions de médiation sociale
+        <br> <strong>183</strong> Classes de collège et lycée ont participé à nos programmes de découverte de l’entreprise et d’égalité des chances (accès aux stages …)
+        <br> <strong>+ de 6000</strong> Demandeurs d’emplois accompagnés
+        <br> <strong>5900</strong> Collaborateurs d’entreprise impliqués dans nos actions
       </p>
+
+      </div>
+
 
 
 
@@ -649,6 +655,46 @@
   </div>
 
   <script type="text/javascript" src="javascript/club.js">
+  </script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script>
+  	// init controller
+  	var controller = new ScrollMagic.Controller();
+  </script>
+
+  <script>
+  	// build scene
+  	var scene = new ScrollMagic.Scene({triggerElement: ".trigger"})
+  					// trigger animation by adding a css class
+  					.setClassToggle(".animate", "zap")
+  					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+  					.addTo(controller);
+    var scene2 = new ScrollMagic.Scene({triggerElement: ".trigger2"})
+  					// trigger animation by adding a css class
+  					.setClassToggle(".animate2", "zap2")
+  					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+  					.addTo(controller);
+    var scene22 = new ScrollMagic.Scene({triggerElement: ".trigger2-2"})
+  					// trigger animation by adding a css class
+  					.setClassToggle(".animate2-2", "zap2")
+  					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+  					.addTo(controller);
+    var scene23 = new ScrollMagic.Scene({triggerElement: ".trigger2-3"})
+  					// trigger animation by adding a css class
+  					.setClassToggle(".animate2-3", "zap2")
+  					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+  					.addTo(controller);
+    var scene3 = new ScrollMagic.Scene({triggerElement: ".trigger3"})
+  					// trigger animation by adding a css class
+  					.setClassToggle(".animate3", "zap3")
+  					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+  					.addTo(controller);
+    var scene31 = new ScrollMagic.Scene({triggerElement: ".trigger3-1"})
+            // trigger animation by adding a css class
+            .setClassToggle(".animate3-1", "zap3")
+            // .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+            .addTo(controller);
   </script>
 </body>
 

@@ -23,7 +23,7 @@ body {
   width: 100%;
   margin: 0 auto;
   font-family: "din";
-  overflow: -webkit-paged-y;
+  overflow-x: hidden;
 }
 
 

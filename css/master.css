@@ -294,6 +294,18 @@ flex-direction: column;
   height: 100px;
 }
 
+.container-champ .les-champs-daction .case .pictures .img-new img{
+  width: inherit;
+  height: 100%;
+}
+
+.container-champ .les-champs-daction .case .pictures .img-new {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .container-champ .les-champs-daction .case a {
   width: 100%;
 }
